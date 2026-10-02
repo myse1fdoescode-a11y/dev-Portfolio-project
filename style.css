@@ -1,0 +1,170 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    padding-left: 1rem;
+}
+
+:root {
+    --primary-dark: black;
+    --secondary-dark:gray;
+    --primary-accent :darkorange;
+    --secondary-accent: rgb(190, 105, 1);
+    --text-color:rgb(161, 161, 161);
+}
+
+.navbar {    
+    height: 15dvh;
+    margin: .4rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+
+}
+
+
+.Hero-section {
+    border: 1px solid gray;
+    width: 100%;
+    height: 60dvh;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.about-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border: 1px solid gray;
+
+}
+
+.about {
+    align-self: flex-start;
+    max-width: 700px;
+    width: 60vw;
+    .top {
+        display: flex;
+        align-items: flex-end; 
+    }
+    .bottom {
+        padding-top: 2rem;
+    }
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    overflow-y: auto;
+    max-width: 380px;
+    overflow-y: auto;
+
+}
+
+.accordion-item {
+    border: 2px solid var(--secondary-dark);
+}
+
+.accordion-body {
+    border-top: 2px solid var(--secondary-dark);
+    padding-top: 5px;
+    padding-left: 1rem ;
+    overflow-y: auto;
+}
+
+.skill-accordion button {
+    padding: 1rem;
+    height: 80px;
+    min-width: 344px;
+    p {
+        font-size: larger;
+    }
+
+}
+
+/* Projects
+        card-container
+            card */
+.projects {
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: 1px solid gray;
+    
+}
+
+.card-container {
+    display: flex;
+    padding:  2rem 5rem;
+    width: 70vw;
+    justify-content: space-between;
+    margin: 2rem;
+    margin-top: 4rem;
+
+    border: 1px solid gray;
+}
+
+/* Contact = section
+        h2 = Contact Me
+            form
+                figure = input-feild 
+                .submit*/
+.contact {
+    height: 100vh;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    border: 1px solid gray;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    width: 50vw;
+    border: 1px solid gray;
+}
+
+.input-feild {
+    display: flex;
+    flex-direction: column;
+    height: 15%;
+    width: 80%;
+}
+
+.submit {
+    width: 80%;
+    margin-top: 3rem;
+    
+}
+
+
+footer  {
+    background-color: var(--secondary-dark);
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    p {
+        color: black;
+        text-decoration: underline;
+    }
+}
+
+

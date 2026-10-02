@@ -150,7 +150,6 @@ Must include:
 - GitHub profile link
 - Optional contact form (HTML only required)
 
----
 
 ### 7) Footer
 
