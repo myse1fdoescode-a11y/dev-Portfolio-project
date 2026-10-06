@@ -5,43 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ba3a0824a2.js" crossorigin="anonymous"></script>
     <title>Jackson Gwaltney</title>
 </head>
-<body class="bg-dark " data-bs-theme="dark">
-    <nav class="navbar navbar-expand-lg bg-light-subtle">
+<body class="bg-dark" data-bs-theme="dark">
+    <p id="home" style="height: 0px; width: 0px; overflow: hidden;"></p>
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#home">Home</a>
+            <a class="navbar-brand" href="#home"><i class="fa-regular fa-house"></i></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">About Me</a>
+                        <a class="nav-link active" aria-current="page" href="#"><i class="fa-regular fa-comment"></i>About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Projects</a>
+                        <a class="nav-link active" href="#projects"><i class="fa-solid fa-computer"></i>Projects</a>
                     </li>
                     <li class="nav-item"> 
-                        <a class="nav-link active" >Contact Me</a>
+                        <a class="nav-link active" href=""><i class="fa-solid fa-phone"></i>Contact Me</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <section class="Hero-section d-flex align-items-end justify-content-around">
+    <section class="Hero-section d-flex align-items-end justify-content-between">
                 <div class="my-name">
                     <h1>Jackson</h1>
                     <h1>Gwaltney</h1>
                 </div>
-                
-                <h6><em>Professional Title</em></h6>
-                
-                <div class="view-projects">
+                <h6><em>Rising Developer</em></h6>
                     <a href="#projects">
-                        View my Work
+                        Jump to my projects
                     </a>
-            </div>
             </div>
         </div>
     </section>
@@ -61,10 +59,10 @@
         </section>
         <section class="skills">
             <h1 class="skills-heading">Skills</h1>
-            <div class="skill-accordion">
+            <div class="accordion skill-accordion">
                 <div class="accordion-item">
                     <h2 class="accordion-header d-flex">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
                             <p>Summary</p>
                         </button>
                     </h2>
@@ -76,10 +74,10 @@
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header d-flex">
+                        <button class="accordion-button  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            <p>Front End</p>
+                        </button>
                     </h2>
-                    <button class="accordion-button  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                        <p>Front End</p>
-                    </button>
                     <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
                         <div class="accordion-body">
                             <p>This is the second item’s accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</p>
@@ -116,28 +114,30 @@
     <section class="projects" id="projects">
         <h2>Projects</h2>
         <div class="card-container">
-            <div class="card" style="width: 18rem; height: 20rem;">
-                <img src="images/project-blank.webp" class="card-img-top" alt="project photo">
+            <div class="card">
+                <a href="#GitHub">
+                    <img src="images/project-blank.webp" class="card-img-top" alt="project photo">
+                </a>
                 <div class="card-body">
-                    <h5 class="card-title">Project 1</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                    <a href="#" class="btn btn-primary" style="background-color: var(--primary-accent);">Github</a>
+                <h4 class="card-title">Project 1</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
                 </div>
             </div>
-            <div class="card shadow" style="width: 18rem;">
-                <img src="images/project-blank.webp" class="card-img-top" alt="project photo">
+            <div class="card">
+                <a href="#GitHub">
+                    <img src="images/project-blank.webp" class="card-img-top" alt="project photo">
+                </a>
                 <div class="card-body">
-                    <h5 class="card-title">Project 2</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                    <a href="#" class="btn btn-primary" style="background-color: var(--primary-accent);">GitHub</a>
+                <h4 class="card-title">Project 2</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
                 </div>
             </div>
         </div>
     </section>
     
-    <section class="contact" style="width: 100%;" id="contact">
+    <section class="contact" id="contact">
         <h2 class="contact-header">Contact Me</h2>
-        <form action="https://formsubmit.co/myse1f.does.code@gmail.com"  method="POST" class="contact-input-feild  d-flex flex-column shadow rounded">
+        <form action="https://formsubmit.co/myse1f.does.code@gmail.com"  method="POST" class="contact-input-feild">
             <figure class="input-feild">
                 <label for="name">Name</label>
                 <input class="input-name"  type="text" name="name"  id="name" required>
@@ -152,6 +152,16 @@
             </figure>
             <button  type="submit" class="submit btn btn-primary">Send</button>
         </form>
+        <!-- TODO \/ -->
+        <!-- ! come back to this -->
+        <!-- ? Check -->
+        <div class="other-contact d-flex flex-column align-items-center">
+            <h3>Or contact me at</h3>
+            <a href="#" class="contact-link"><i class="fa-brands fa-linkedin-in"></i>Linkdin</a>
+            <a href="#" class="contact-link"><i class="fa-solid fa-envelope"></i>jaxdGwaltney@icloud.com</a>
+            <a href="#" class="contact-link"><i class="fa-brands fa-discord"></i>Discord</a>
+            <a href="" class="contact-link"><i class="fa-brands fa-github"></i>GitHub</a>
+        </div>
     </section>
     
     <footer class="footer" style="width: 100%;">
