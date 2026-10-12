@@ -477,7 +477,7 @@ footer  {
     }
 
     .card-text {
-        height: 75px;
+        max-height: none;
     }
 
     .toGitHub {
@@ -513,6 +513,10 @@ footer  {
         display: inline;
     }
     
+    .card-text {
+        max-height: none;
+    }
+
     textarea,input {
     background-color: rgb(59, 59, 59);
     border: 1px solid gainsboro;
