@@ -1,6 +1,6 @@
 
 :root {
-    --primary-accent: #C76300;
+    --primary-accent: rgb(199, 99, 0);
     --accent-hover :rgb(168,96,44);
     --default-shadow: -4px -4px 15px 2px rgba(0, 0, 0, 0.452);
     --primary-dark: rgb(16, 42, 53);
@@ -322,6 +322,7 @@ svg {
 
 .toGitHub {
     display: none;
+    border: none;
     background-color: var(--primary-accent);
 
     &:hover {
@@ -367,6 +368,8 @@ form {
         height: 30px;
     }
 }
+
+
 
 
 
@@ -481,15 +484,11 @@ footer  {
         display: inline;
         border: none;
     }
-    .input-feild{
-        background-color: darkgray;
-        border: 1.5px solid rgb(58, 56, 56);
-        border-radius: 5px;
-    }
-    textarea {
-    background-color: darkgrey;
+
+    textarea,input {
+    background-color: rgb(59, 59, 59);
+    border: 1px solid gainsboro;
     border-radius: 5px;
-    border: 1.5px solid rgb(58, 56, 56);
 
     }
     .other-contact {
@@ -514,17 +513,12 @@ footer  {
         display: inline;
     }
     
-    .input-feild{
-        background-color: darkgray;
-        border: 1.5px solid rgb(58, 56, 56);
-        border-radius: 5px;
+    textarea,input {
+    background-color: rgb(59, 59, 59);
+    border: 1px solid gainsboro;
+    border-radius: 5px;
     }
     
-    textarea {
-    background-color: darkgrey;
-    border-radius: 5px;
-    border: 1.5px solid rgb(58, 56, 56);
-    }
     .other-contact {
         /* align-self: center; */
         margin-top: 2rem;
