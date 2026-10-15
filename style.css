@@ -320,7 +320,7 @@ svg {
     transition: 450ms max-height ease-out;
 }
 
-.toGitHub {
+.toGitHub,.main-button {
     display: none;
     border: none;
     background-color: var(--primary-accent);
@@ -369,20 +369,21 @@ form {
     }
 }
 
-
-
-
-
 .submit {
     width: 100%;
     margin-top: 3rem;
     background-color: var(--primary-accent);
     border: none;
 
-    &:hover {
+    &:hover,&:focus {
         background-color: var(--accent-hover);
     }
     
+}
+
+.btn-primary:active {
+    background-color: var(--accent-hover) !important;
+    box-shadow: none;
 }
 
 .other-contact {
@@ -424,6 +425,29 @@ footer  {
     }
 }
 
+#sentMessageBody {
+    background-color: var(--primary-dark);
+
+    .container {
+        background-color: var(--secondary-dark);
+        box-shadow: var(--default-shadow);
+        border-radius: 30px;
+        margin-top: 7rem;
+        width: 50vw;
+        height: 50vh;
+    }
+
+    a {
+        margin-top: 5rem;
+        width: 15rem;
+        background-color: var(--primary-accent);
+        border: none;
+
+        &:hover{
+            background-color: var(--accent-hover);
+        }
+    }
+}
 
 /* media queries */
 @media (max-width: 767px) {
